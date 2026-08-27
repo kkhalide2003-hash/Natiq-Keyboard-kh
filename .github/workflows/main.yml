@@ -21,11 +21,13 @@ jobs:
       run: unzip NatiqKeyboard_Android_Project.zip
 
     - name: Build APK
-      run: bash ./gradlew assembleDebug
+      run: |
+        chmod +x gradlew || true
+        gradle assembleDebug || ./gradlew assembleDebug
 
     - name: Upload APK
       uses: actions/upload-artifact@v3
       with:
         name: app-debug
-        path: app/build/outputs/apk/debug/app-debug.apk
+        path: "**/build/outputs/apk/debug/*.apk"
         
