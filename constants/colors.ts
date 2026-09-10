@@ -14,49 +14,64 @@
 
 const colors = {
   light: {
-    text: '#10203A',
-    tint: '#1D5CFF',
-    background: '#F4F7FB',
-    foreground: '#10203A',
+    // Legacy aliases (kept for backward compatibility)
+    text: '#10212B',
+    tint: '#00B8A9',
+
+    // Core surfaces
+    background: '#F5F7F4',
+    foreground: '#10212B',
+
+    // Cards / elevated surfaces
     card: '#FFFFFF',
-    cardForeground: '#10203A',
-    primary: '#1D5CFF',
-    primaryForeground: '#FFFFFF',
-    secondary: '#E8EEFA',
-    secondaryForeground: '#19325A',
-    muted: '#EDF2F8',
-    mutedForeground: '#6E7D93',
-    accent: '#E5EDFF',
-    accentForeground: '#1D5CFF',
-    destructive: '#D94456',
-    destructiveForeground: '#FFFFFF',
-    border: '#DCE5F0',
-    input: '#DCE5F0',
-    success: '#238A68',
-    gold: '#E0A63A',
+    cardForeground: '#10212B',
+
+    // Primary action color (buttons, links, active states)
+    primary: '#00A99D',
+    primaryForeground: '#ffffff',
+
+    // Secondary / less-emphasis interactive surfaces
+    secondary: '#E6F4F1',
+    secondaryForeground: '#14534D',
+
+    // Muted / subdued elements (dividers, timestamps, placeholders)
+    muted: '#E7ECEA',
+    mutedForeground: '#6C7D7A',
+
+    // Accent highlights (badges, selected items, focus rings)
+    accent: '#FFF0D9',
+    accentForeground: '#7A4C16',
+
+    // Destructive actions (delete, error states)
+    destructive: '#ef4444',
+    destructiveForeground: '#ffffff',
+
+    // Borders and input outlines
+    border: '#DCE6E2',
+    input: '#DCE6E2',
   },
+
   dark: {
-    text: '#F6F8FC',
-    tint: '#86A7FF',
-    background: '#0C1424',
-    foreground: '#F6F8FC',
-    card: '#152238',
-    cardForeground: '#F6F8FC',
-    primary: '#86A7FF',
-    primaryForeground: '#0C1424',
-    secondary: '#1C2D49',
-    secondaryForeground: '#DDE7FF',
-    muted: '#1A2940',
-    mutedForeground: '#9CAEC8',
-    accent: '#1C315F',
-    accentForeground: '#9DB7FF',
-    destructive: '#F47D8A',
-    destructiveForeground: '#240A0E',
-    border: '#2B3D59',
-    input: '#2B3D59',
-    success: '#64C9A4',
-    gold: '#F0BD56',
+    text: '#F2FBF8',
+    tint: '#58D8C8',
+    background: '#0D1B20',
+    foreground: '#F2FBF8',
+    card: '#15272C',
+    cardForeground: '#F2FBF8',
+    primary: '#42CDBE',
+    primaryForeground: '#08201E',
+    secondary: '#19393A',
+    secondaryForeground: '#B8F2EA',
+    muted: '#1A3034',
+    mutedForeground: '#9BB4B0',
+    accent: '#4B3620',
+    accentForeground: '#FFD08B',
+    destructive: '#FF746F',
+    destructiveForeground: '#2A0F0E',
+    border: '#294247',
+    input: '#294247',
   },
+
   radius: 18,
 };
 
